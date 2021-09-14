@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-family:cursive;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: rgb(180, 179, 179);
+}
+
+.container {
+    border-radius: 5px;
+    width: 500px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: rgb(161, 226, 64);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color:#777;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control small {
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: rgb(161, 226, 64);
+    border: 2px solid rgb(161, 226, 64);
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-family: cursive;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
